@@ -1,5 +1,5 @@
 <fieldset id="second">
-    <p class="tips">请输入管理员密码</p>
+    <p class="tips">请输入管理员密码<br/>（测试用：密码为八个零）</p>
     <form name="user" id="login" action="">
         <input name="pwd" ng-model="pwd" type="password" ng-pattern='/^[0]{8}$/' required>
         <button id="submit" ng-click="toUpdate()" ng-show="user.pwd.$valid">确认</button>
