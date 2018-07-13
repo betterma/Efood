@@ -4,8 +4,7 @@
 // home_btn.onclick = function(){
 //         location.href="update.html";
 //     }
-alert(window.innerWidth);
-alert(window.innerHeight);
+
 
 if(document.clientWidth)
 
