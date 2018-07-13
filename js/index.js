@@ -4,6 +4,11 @@
 // home_btn.onclick = function(){
 //         location.href="update.html";
 //     }
+alert(window.innerWidth);
+alert(window.innerHeight);
+
+if(document.clientWidth)
+
 var app = angular.module("myApp",['ng','ngRoute','ngAnimate']);
 
 app.controller("myCtrl",function($scope,$location){
