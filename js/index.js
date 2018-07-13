@@ -1,5 +1,5 @@
 if(window.innerWidth >720 ||window.innerHeight >1280){
-	alert(页面是根据移动端适应的，建议在移动端浏览（https://betterma.github.io/Efood）);
+	alert("页面是根据移动端适应的，建议在移动端浏览（https://betterma.github.io/Efood）");
 }
 
 var app = angular.module("myApp",['ng','ngRoute','ngAnimate']);
