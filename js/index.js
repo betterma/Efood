@@ -6,7 +6,7 @@
 //     }
 
 
-if(document.clientWidth)
+
 
 var app = angular.module("myApp",['ng','ngRoute','ngAnimate']);
 
