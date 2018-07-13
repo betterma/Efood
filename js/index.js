@@ -1,13 +1,3 @@
-// user_btn.onclick = function(){
-//     location.href="index.html";
-// }
-// home_btn.onclick = function(){
-//         location.href="update.html";
-//     }
-
-
-
-
 var app = angular.module("myApp",['ng','ngRoute','ngAnimate']);
 
 app.controller("myCtrl",function($scope,$location){
