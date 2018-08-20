@@ -1,0 +1,61 @@
+<div id="up"></div>
+<div id="price">
+
+    <button id="menu_btn">清单列表</button>
+
+    <div id="select">
+        <table width="100%">
+            <thead>
+            <tr><th>物品名称</th><th>单价</th><th>数量</th></tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="obj in lists">
+                <td>{{obj.name}}</td>
+                <td>{{obj.price|currency:"￥"}}</td>
+                <td ><input type="number" ng-model="obj.cot" value="0" ng-pattern="/^[\d]+$/"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <p>原价：<del>{{sum()| currency:'￥'}}</del></p>
+    <fieldset id="select_good">
+        <p>选择折扣：<br>
+        <form action="">
+            <input type="checkbox" ng-model="good1">今日<span class="good">8折优惠</span><br>
+            <input type="checkbox" ng-model="good2">满减：满50减5
+        </form>
+        <span>【Tip：选择多个优惠和折扣，以最后一项为准】</span>
+        </p>
+    </fieldset>
+
+    <p>折扣后：<b class="big">{{result()| currency:'￥' }}</b></p>
+    <button ng-click="show()">打印清单</button>
+    <a href="#first"><img id="return_img" src="img/red.png" alt="" /></a>
+    <!--//打印清单部分-->
+    <div id="list">
+        <fieldset>
+            <p>清单</p>
+            <p>---------------------------------------------</p>
+            <p id="time">{{time}}</p>
+            <table border="1px solid black">
+                <tr><th>名称</th><th>单价</th><th>数量</th><th>总价</th></tr>
+                <tr ng-repeat="obj in lists" ng-if="obj.cot">
+                    <td>{{obj.name}}</td><td>{{obj.price|currency:'￥'}}</td>
+                    <td>{{obj.cot}}</td><td>{{obj.cot*obj.price|currency:'￥'}}</td>
+                </tr>
+            </table>
+
+            <p>总价格：{{sum()|currency:'￥'}}</p>
+            <p>已选优惠：<span ng-show="good1" class="good">八折优惠</span><span class="good" ng-show="good2">满50减5</span> </p>
+            <p>应付价格：{{result()|currency:'￥'}}</p>
+            <button ng-click="unshow()">退出清单</button>
+        </fieldset>
+    </div>
+</div>
+<style>
+    body{
+        background: url("img/new.jpg") -1000px -2000px no-repeat;
+    }
+</style>

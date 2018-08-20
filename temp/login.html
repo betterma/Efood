@@ -1,0 +1,44 @@
+<fieldset id="second">
+    <p class="tips">请输入管理员密码</p>
+    <p>测试：8个0<p>
+    <form name="user" id="login" action="">
+        <input name="pwd" ng-model="pwd" type="password" ng-pattern='/^[0]{8}$/' required>
+        <button id="submit" ng-click="toUpdate()" ng-show="user.pwd.$valid">确认</button>
+    </form>
+</fieldset>
+
+<style>
+    body{
+        text-align: center;
+        background: url("img/true.jpg") no-repeat;
+    }
+    .tips{
+        font-weight: bolder;
+        font-size: 1.5rem;
+    }
+    #second{
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        color:white;
+        margin-top:200px;
+        background-color:rgba(100,100,100,0.5);
+    }
+    #second input{
+    	height:30px;
+        text-align: center;
+        color:white;
+        outline: none;
+        border-width: 0;
+        border-color: rgba(100,100,100,0.5);
+        border-bottom:3px solid white;
+        background-color: rgba(100,100,100,0.5);
+    }
+   #submit{
+       margin-top:30px;
+       color:white;
+       width:150px;
+       height:40px;
+       font-size: 1.4rem;
+   }
+</style>
