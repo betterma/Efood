@@ -1,0 +1,112 @@
+*{
+    outline: none;
+}
+.page{
+    font-size: 16px;
+    width: 100%;
+    height:auto;
+}
+#first{
+    margin: 183px auto;
+    width:80%;
+    height: auto;
+    border:0px solid;
+    border-radius: 40px;
+    background-color: rgba(290,290,290,0.3);
+    box-shadow:10px 10px 10px rgba(100,100,100,0.5);
+}
+#first button{
+    display: block;
+    width:100%;
+    height: 60px;
+    margin: 20px 0;
+    border-radius:20px;
+    font-size: 1.5rem;
+    /*font-weight: bolder;*/
+    color:#fff;
+    background-color: rgba(0,0,10,0.7);
+}
+
+
+/*#up{*/
+    /*margin: -8px;*/
+    /*padding: 9px;*/
+    /*width:100%;*/
+    /*height:0px;*/
+    /*background-color:black;*/
+/*}*/
+
+#select{
+	border-radius: 20px;
+    overflow-y: scroll;
+    height:400px;
+}
+#select table{
+	border-radius: 20px;
+    background-color: rgba(0,0,10,0.1);
+    border: none;
+    text-align: center;
+    font-size: 1.3rem;
+}
+#select table th{
+    width:33%;
+}
+#select table th,td{
+    height:50px;
+}
+#select table td input{
+    width:80%;
+    height:auto;
+}
+.good{
+    color:red;
+    font-weight: bolder;
+}
+button{
+    display: block;
+    margin: 19px auto;
+    border: 0px solid;
+    box-shadow: 1px 1px 3px gray;
+    width:30%;height: 30px;
+    border-radius: 20px;
+    color: black;
+    font-size: 1rem;
+    background-color:rgba(150,150,150,0.7)
+}
+#select{
+    background-color: rgba(200,200,100,0.4);
+}
+#select_good{
+    background-color: rgba(200,200,100,0.4);
+    border: none;
+}
+/*//打印出清单*/
+#list{
+    text-align: center;
+    width:100%;
+    height:auto;
+    border:1px solid gray;
+    background-color:white;
+    border-radius: 5px;
+    position: absolute;
+    top:100px;
+    right:19px;
+    display:none;
+    margin: 0 auto;
+}
+#list table{
+    margin: 0 auto;
+}
+#list table th{
+    width:25%;
+}
+.big{
+    font-size: 1.7rem;
+}
+#return_img{
+    width:50px;
+    height: 50px;
+    position: fixed;
+    bottom:10px;
+    right:10px;
+}
